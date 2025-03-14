@@ -1,3 +1,4 @@
 baseURL = 'https://savethesjcc.com/'
 languageCode = 'en-us'
 title = 'Save the St Johns Community Center'
+theme = "hugo-product-launch"

@@ -1,0 +1,113 @@
+<form
+  id="voice-form"
+  class="max-w-lg mx-auto p-4 bg-white shadow-md rounded"
+  method="POST"
+  action="http://127.0.0.1:5000/opposition"
+>
+  <div class="mb-4">
+    <label for="name" class="block text-gray-700 text-sm font-bold mb-2"
+      >Name</label
+    >
+    <input
+      type="text"
+      name="name"
+      placeholder="Your Name"
+      class="border border-gray-300 px-3 py-2 w-full rounded"
+      required
+    />
+  </div>
+  <div class="mb-4">
+    <label for="email" class="block text-gray-700 text-sm font-bold mb-2"
+      >Email</label
+    >
+    <input
+      type="text"
+      name="email"
+      placeholder="Your Email"
+      class="border border-gray-300 px-3 py-2 w-full rounded"
+      required
+    />
+  </div>
+  <div class="mb-4">
+    <label for="district" class="block text-gray-700 text-sm font-bold mb-2"
+      >District</label
+    >
+    <div class="flex flex-col space-y-2">
+      <label class="inline-flex items-center">
+        <input
+          type="radio"
+          name="district"
+          value="district-1"
+          class="form-radio"
+          required
+        />
+        <span class="ml-2">District 1</span>
+      </label>
+      <label class="inline-flex items-center">
+        <input
+          type="radio"
+          name="district"
+          value="district-2"
+          class="form-radio"
+          checked
+          required
+        />
+        <span class="ml-2">District 2 (St Johns)</span>
+      </label>
+      <label class="inline-flex items-center">
+        <input
+          type="radio"
+          name="district"
+          value="district-3"
+          class="form-radio"
+          required
+        />
+        <span class="ml-2">District 3</span>
+      </label>
+      <label class="inline-flex items-center">
+        <input
+          type="radio"
+          name="district"
+          value="district-4"
+          class="form-radio"
+          required
+        />
+        <span class="ml-2">District 4</span>
+      </label>
+      <label class="inline-flex items-center">
+        <input
+          type="radio"
+          name="district"
+          value="dont-know"
+          class="form-radio"
+          required
+        />
+        <span class="ml-2">Don't know or want to say</span>
+      </label>
+    </div>
+  </div>
+  <div class="mb-4">
+    <textarea
+      name="testimonial"
+      class="border border-gray-300 px-3 py-2 w-full rounded"
+      rows="12"
+      required
+    >
+I oppose the selection of the St Johns Community Center for closure as part of budget proposal 23,635 - Close Neighborhood Community Center.
+
+St Johns is a working class community and the community center provides a vital lifeline for that community. St Johns Community Center hosts SOAR after school programming as well as a preschool in addition to the classes and events the community center already provides.
+
+The St Johns neighborhood has 88% enrollment rate of children in public schools. 13% of the community is food insecure, 52% are rent burdened, and 42% of the community is non-white. Shutting down the community center will cause harm to the diverse communities of St Johns where many are already struggling. The closure of this community center and discontinuation of its programming will create a disproportionate hardship on children, the elderly, and families experiencing poverty. 
+
+It is imperative that we reject the current budget proposal (23,635) and that our city retains the St Johns Community Center as a critical resource serving all residents. 
+    </textarea>
+  </div>
+  <div class="mb-4">
+    <button
+      type="submit"
+      class="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded"
+    >
+      Send
+    </button>
+  </div>
+</form>

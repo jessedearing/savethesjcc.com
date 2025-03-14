@@ -1,0 +1,6 @@
+.venv
+.nodeenv
+node_modules/
+resources/
+*.pyc
+public/
