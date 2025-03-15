@@ -1,12 +1,19 @@
 import generateUUIDv7 from './uuidv7';
 
+const SITE_URL = 'https://savethesjcc.com';
+
 export default {
 	async fetch(request, env, ctx): Promise<Response> {
 		const url = new URL(request.url);
 		if (request.method === 'POST' && url.pathname.startsWith('/opposition')) {
 			const formResponse = await request.formData();
-			if (!formResponse.get('name') && !formResponse.get('email') && !formResponse.get('district') && !formResponse.get('testimonial')) {
-				return new Response('Missing fields');
+			if (
+				isInvalidFormResponse(formResponse.get('name')) ||
+				isInvalidFormResponse(formResponse.get('email')) ||
+				isInvalidFormResponse(formResponse.get('district')) ||
+				isInvalidFormResponse(formResponse.get('testimonial'))
+			) {
+				return Response.redirect(`${SITE_URL}/invalid`, 307);
 			}
 			console.log('Form response', formResponse);
 			const insert = env.DB.prepare(
@@ -23,8 +30,13 @@ export default {
 					new Date().getTime(),
 				)
 				.run();
-			return Response.redirect('http://localhost:1313/thanks', 303);
+			return Response.redirect(`${SITE_URL}/thanks`, 303);
 		}
-		return new Response('Save the St Johns Community Center');
+		return Response.redirect(`${SITE_URL}/`, 307);
 	},
 } satisfies ExportedHandler<Env>;
+
+function isInvalidFormResponse(value: (File | string) | null): boolean {
+	if (value === null || typeof value !== 'string' || value === '') return true;
+	return false;
+}
