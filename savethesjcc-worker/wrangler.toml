@@ -1,0 +1,10 @@
+name = "savethesjcc-worker"
+main = "src/index.ts"
+compatibility_date = "2025-03-13"
+[observability]
+enabled = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "savethesjcc-responses"
+database_id = "3039af1f-e085-4d08-b65c-f4a4b7c9d1d6"
