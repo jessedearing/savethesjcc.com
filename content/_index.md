@@ -16,7 +16,9 @@ header_button_more:
 teaser_image: "images/sjcc.jpg"
 ---
 
-## News
+# News
+
+{{< koin_embed >}}
 
 # Voice your opposition
 

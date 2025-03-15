@@ -14,4 +14,4 @@ keywords = "st johns, portland, oregon, community center"
 
 [build]
 [build.buildStats]
-enabled = true
+enable = true
