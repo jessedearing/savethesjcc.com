@@ -1,5 +1,8 @@
 ---
 header_brand: "Save the St Johns Community Center"
+description:
+  Voice your opposition to the selection of the St Johns Community Center for
+  closure and keep up to date on the process
 header_tagline_paragraph: |-
   The Portland City Administrator in the budget office has in the 2025-2026
   preliminary budget report that they close a community center identifying the

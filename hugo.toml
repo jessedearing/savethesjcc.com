@@ -2,3 +2,16 @@ baseURL = 'https://savethesjcc.com/'
 languageCode = 'en-us'
 title = 'Save the St Johns Community Center'
 theme = "hugo-product-launch"
+disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT", "404"]
+defaultContentLanguage = "en"
+
+[params]
+copyright = "Save the St Johns Community Center"
+description = "Voice your opposition to the selection of the St Johns Community Center for closure and keep up to date on the process"
+images = ["images/og-img.jpg"]
+[params.meta]
+keywords = "st johns, portland, oregon, community center"
+
+[build]
+[build.buildStats]
+enabled = true
