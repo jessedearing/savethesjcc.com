@@ -3,22 +3,37 @@ header_brand: "Save the St Johns Community Center"
 description:
   Voice your opposition to the selection of the St Johns Community Center for
   closure and keep up to date on the process
-header_tagline_paragraph: |-
-  The Portland City Administrator in the budget office has in the 2025-2026
-  preliminary budget report that they close a community center identifying the
-  St Johns Community center as one to close
+header_tagline_paragraph: |
+  Tell City of Portland leaders that the St Johns Community center is too vital
+  to working families to be closed.
 header_button_cta:
   url: "#voice-your-opposition"
   title: "Voice your opposition"
 header_button_more:
   url: "#connect"
   title: "Keep me up to date"
-teaser_image: "images/sjcc.jpg"
 ---
+
+The Portland City Administrator in the budget office has in the 2025-2026
+preliminary budget report that they close a community center identifying the St
+Johns Community center as one to close.
+
+The St Johns Community center provides working class families access to child
+care, after school care, and acts as the location for the St Johns community for
+support. For example, in the summer of 2024, through a partnership with PPS the
+community center acted as a hub for collecting lunches.
+
+Voice your opposition to city leaders telling them that closing the St Johns
+community center will harm the St Johns and larger North Portland community and
+keep up to date as this process unfolds.
 
 # News
 
 {{< koin_embed >}}
+
+[KOIN: Portland city councilors respond to 3 community centers at risk of closing](https://www.koin.com/news/portland/portland-city-councilors-respond-to-3-community-centers-at-risk-of-closing/)
+
+[Fox 12 (KPTV): 3 Portland-area community centers at risk of closing](https://www.kptv.com/2025/03/13/3-portland-area-community-centers-risk-closing/)
 
 # Voice your opposition
 
