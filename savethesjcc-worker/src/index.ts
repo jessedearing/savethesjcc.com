@@ -15,7 +15,6 @@ export default {
 			) {
 				return Response.redirect(`${SITE_URL}/invalid`, 307);
 			}
-			console.log('Form response', formResponse);
 			const insert = env.DB.prepare(
 				'INSERT INTO responses (id, fullname, email, district, testimonial, collected_date) values (?, ?, ?, ?, ?, ?)',
 			);
